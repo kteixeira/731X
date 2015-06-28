@@ -1,0 +1,334 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body, span, p, form, img, a, ul, ol, li, table, tr, td, h1, h2, h3, div, header, figure, fieldset {
+	margin: 0;
+	border:none; 
+	outline:none;
+	list-style-type:none;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+/* ------------- DEFAULT ------------ */
+
+/* ------------- FONT-FACE ------------ */
+
+@font-face{
+	font-family: 'Gotham';
+	src: url("../fonts/ufonts.com_gotham-book.ttf");
+}
+
+html, body {
+ 	font-family: "Gotham";
+	width: 100%;
+	height: 100%;
+	line-height: 1.5;
+}
+
+/* ------------- SLIDER ------------ */
+
+.box{
+	width: 100%;
+	height: 467px;
+	margin: 0 auto;
+	position: relative;	
+}
+
+.slider{
+	width: 100%;
+	height: 667px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slider-item{
+	width: 100%;
+	height: 467px;
+	position: relative;
+}
+
+.pager{
+	position:absolute;
+	z-index: 999;
+	top: 640px;
+	left: 600px;
+}
+
+.pager a{
+	display: block;
+	width: 1px;
+	height: 1px;
+	padding: 5px;
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	background: #FFF;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+	opacity: 0.1;
+}
+
+.pager a:hover{
+	opacity: 1;
+}
+
+.pager a.activeSlide{
+	opacity: 1;
+}
+
+
+section { display: inline-block; } /*Para ajustar padrão do chrome*/
+ 
+/** formata elementos que tem backgrounds parallax **/
+.parallax {
+    font-family: 'Gotham';
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    /*max-width: 1920px;*/
+    position: relative;
+    min-height: 650px;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+    
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ 
+/* Define backgrounds dos divs */
+#home {background-image: url(../img/lookbook/001.jpg);}
+#picture1 {background-image: url(../img/lookbook/002.jpg);}
+#picture2 {background-image: url(../img/lookbook/003.jpg);}
+#picture3 {background-image: url(../img/lookbook/004.jpg);}
+#picture4 {background-image: url(../img/lookbook/005.jpg);}
+#picture5 {background-image: url(../img/lookbook/006.jpg);}
+#picture6 {background-image: url(../img/lookbook/007.jpg);}
+#picture7 {background-image: url(../img/lookbook/008.jpg);}
+#picture8 {background-image: url(../img/lookbook/009.jpg);}
+#picture9 {background-image: url(../img/lookbook/010.jpg);}
+#picture10 {background-image: url(../img/lookbook/011.jpg);}
+ 
+#home article { 
+	padding:20% 0 0; 
+	margin: 0 200px;
+}
+
+#home article header h1{
+	text-align: center;
+}
+
+/* ------------- MENU ------------ */
+
+.header {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	text-align: center;
+}
+
+.header__logo {
+	padding-top: 1em;
+	width: 180px;
+}
+
+.header__menu li a {
+	padding: 3px 8px;
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	font-family: "Gotham";
+	opacity: 0.9;
+	font-size: 0.8em;
+}
+
+.header__menu li a:hover {
+	opacity: 1;
+}
+
+.header__loja-virtual {
+	display: inline-block;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	border:1px solid #f00;
+	border-color: #FFFFFF;
+	width: 150px;
+	text-align: center;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.header__loja-virtual:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* ------------- SLIDER ------------ */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slides {
+	background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.item-1 {
+	background-image: url(../img/lookbook/001.jpg);
+
+}
+
+.item-2 {
+	background-image: url(../img/lookbook/002.jpg);
+}
+
+.item-3 {
+	background-image: url(../img/lookbook/003.jpg);
+}
+
+.item-4 {
+	background-image: url(../img/lookbook/004.jpg);
+}
+
+.container-part1{
+	margin-top:-100px;
+	width: 40%;
+	height: 728px;
+	float: left;
+	background-color: #EEE9E9;
+}
+
+.container-part1 form{
+	margin-top:200px;
+	margin-left:290px;
+}
+
+.container-part1 form .submit{
+	background-color: #EEE9E9;
+	border-style: groove;
+	width: 80px;
+	height: 20px;
+	margin-left:157px; 
+	font-family: "Gotham";
+	font-size: 9.5px;
+	color: #8B8989;
+}
+
+.container-part1 h1{
+	font-size: 16px;
+}
+
+.formArea {
+	background-color: #EEE9E9;
+	font-family: "Gotham";
+	width: 230px;
+	border-style: groove;
+}
+
+.formMsg {
+	background-color: #EEE9E9;
+	font-family: "Gotham";
+	width: 231px;
+	height: 90px;
+	border-style: groove;
+	border-color:#EEE9E9;
+}
+
+input,
+textarea {
+    padding: 2px;
+    font-size: 10px;
+    display: block;
+    width: 80%;
+}
+
+::-webkit-input-placeholder {
+   font: "Gotham";
+}
+
+:-moz-placeholder {
+   font: "Gotham";
+}
+
+::-moz-placeholder {
+   font: "Gotham";
+}
+
+:-ms-input-placeholder {  
+   font: "Gotham";
+}
+
+.container-part1 p{
+	font-size: 11px;
+	color: #8B8989;
+}
+
+.container-part1 #info{
+	margin-top:200px;
+	margin-left:290px;
+}
+
+.container-part2{
+	width: 60%;
+	height: 728px;
+	float: right;
+	margin-top:-100px;
+	background-color: gray;
+	display: block;
+}
+
+/* ------------ MEDIA QUERIES ------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+	.header__logo {
+		float: left;
+	}
+
+	.header__menu ul {float: right;}
+
+	.header__menu li {
+		display: inline-block;
+		padding-top: 2em;
+	}
+}
