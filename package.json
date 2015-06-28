@@ -1,0 +1,14 @@
+{
+  "name": "731X",
+  "version": "1.0.0",
+  "title": "731X",
+  "homepage": "http://www.gustavomodena.com/731X",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "imagemin": "^3.1.0",
+    "grunt-express": "^1.4.1",
+    "grunt-livereload": "^0.1.3"
+  }
+}
